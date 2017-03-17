@@ -33,8 +33,8 @@ export class WalletModel {
   public static web3() {
     if (!this._web3) {
       let Web3 = require('web3');
-      let gurNode = "https://www.relay.ur.technology:9596";
-      // let nodeUrl = "http://127.0.0.1:9595";
+      // let gurNode = "https://www.relay.ur.technology:9596";
+      let gurNode = "http://127.0.0.1:9595";
       this._web3 = new Web3(new Web3.providers.HttpProvider(gurNode));
     }
     return this._web3;

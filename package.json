@@ -1,10 +1,10 @@
 {
-  "name": "ur-money-queue-processor",
+  "name": "send-ur-test",
   "version": "1.0.3",
-  "description": "background tasks associated with git://github.com/urcapital/ur_money.git",
+  "description": "test the sending of a raw transaction on the UR network",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ur-technology/ur-money-queue-processor.git"
+    "url": "git://github.com/ur-technology/send-ur-test.git"
   },
   "main": "build/main.js",
   "engines": {
