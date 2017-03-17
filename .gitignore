@@ -1,0 +1,11 @@
+build/
+/node_modules
+/typings
+*.log
+.DS_Store
+.env
+*.js
+*.js.map
+*.orig
+.node-xmlhttprequest-sync-*
+.node-xmlhttprequest-content-*

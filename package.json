@@ -1,0 +1,38 @@
+{
+  "name": "ur-money-queue-processor",
+  "version": "1.0.3",
+  "description": "background tasks associated with git://github.com/urcapital/ur_money.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ur-technology/ur-money-queue-processor.git"
+  },
+  "main": "build/main.js",
+  "engines": {
+    "node": "4.4.7",
+    "npm": "3.9.5"
+  },
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/tsc --module commonjs --outDir build/ --noImplicitAny --sourceMap --target ES5 lib/*.ts && node build/main.js",
+    "debug": "killall -9 node; ./node_modules/.bin/tsc --module commonjs --outDir build/ --noImplicitAny --sourceMap --target ES5 lib/*.ts && node --inspect --debug-brk --expose-gc build/main.js",
+    "postinstall": "./node_modules/.bin/typings install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^2.4.0",
+    "dotenv": "^2.0.0",
+    "lodash": "^4.14.0",
+    "lodash.padstart": "^4.6.1",
+    "loglevel": "^1.4.1",
+    "throng": "^4.0.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2",
+    "web3": "^0.17.0-alpha",
+    "ethereumjs-tx": "1.1.2",
+    "ethereumjs-util": "^4.5.0",
+    "ethereumjs-wallet": "^0.6.0",
+    "scrypt-async": "^1.2.0"
+  }
+}
