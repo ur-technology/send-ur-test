@@ -86,7 +86,8 @@ export class WalletModel {
         nonce: eth.getTransactionCount(from),
         to: to,
         from: from,
-        value: web3.toWei(amount)
+        gasPrice: eth.gasPrice,
+        value: amount
       };
       rawTx.gasLimit = eth.estimateGas(rawTx);
       let tx = new ethTx(rawTx);

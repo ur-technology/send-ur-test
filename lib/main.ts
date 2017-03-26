@@ -28,7 +28,7 @@ WalletModel.generate(fromAddressSecretPhrase, fromAddressSalt).then((data: any) 
   if (wallet.getAddress() !== fromAddress) {
     return Promise.reject('incorrect secret phrase');
   }
-  return wallet.sendRawTransaction(toAddress, 1);
+  return wallet.sendRawTransaction(toAddress, 123);
 }).then((urTransaction: any) => {
   log.info('sent transaction', urTransaction)
 }, (error: any) => {
